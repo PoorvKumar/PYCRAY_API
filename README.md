@@ -26,19 +26,19 @@ This repository contains a Flask RESTful API that exposes endpoints to retrieve 
 ```python
 python -m venv .venv
 ```
-3. Install the dependencies:
-```python
-pip install -r requirements.txt
-```
-4. Set up the database:
- - Create a PostgreSQL database on your local machine **(or to use online ElephantSQL uncomment line 11-12 in app.py)**
- - Modify the `connection` configuration in `app.py` with your database details(database name,usernmae,password). Alternatively, you can use environment variables by configuring up the `.env` file in the project directory and providing the necessary database credentials or use existing credentials. 
- - Use the Queries in User.txt and Orders.txt to create table and insert sample data in your tables in the same database.
-5. Activate the Virtual Enviroment:
+3. Activate the Virtual Enviroment:
 ```python
   .venv/Scripts/Activate.ps1
 ```
-5. Run the Application:
+4. Install the dependencies:
+```python
+pip install -r requirements.txt
+```
+5. Set up the database:
+ - Create a PostgreSQL database on your local machine **(or to use online ElephantSQL uncomment line 11-12 in app.py)**
+ - Modify the `connection` configuration in `app.py` with your database details(database name,usernmae,password). Alternatively, you can use environment variables by configuring up the `.env` file in the project directory and providing the necessary database credentials or use existing credentials. 
+ - Use the Queries in User.txt and Orders.txt to create table and insert sample data in your tables in the same database.
+6. Run the Application:
 ```python
 flask run
 ```
