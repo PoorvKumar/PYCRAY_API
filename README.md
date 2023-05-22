@@ -17,7 +17,7 @@ This repository contains a Flask RESTful API that exposes endpoints to retrieve 
 1. Clone the repository:
  ```bash
  git clone https://github.com/PoorvKumar/PYCRAY_API.git
- cd flask-api
+ cd PYCRAY_API
 ``` 
 2. Install the dependencies:
 ```python
