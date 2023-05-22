@@ -6,8 +6,10 @@ from flask import Flask, jsonify
 load_dotenv()
 
 app=Flask(__name__)
+
+# # Uncomment to use ElephantSQL online and comment line 14-20
 # url = os.getenv("DATABASE_URL")  
-# connection=psycopg2.connect(url)  ##when connecting through ElephantSQL
+# connection=psycopg2.connect(url)  
 
 ## PostgreSQL Connection Configuration
 connection=psycopg2.connect(
