@@ -133,3 +133,6 @@ def getOrderDetails(order_id):
             return jsonify({'error': 'Order not found!'}), 400 # HTTP status code 400
     except Exception as e:
         return jsonify({'error': 'An error occured','message':str(e)}), 500 # HTTP status code 500
+    
+if __name__ == '__main__':
+    app.run()
