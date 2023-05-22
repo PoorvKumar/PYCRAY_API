@@ -14,7 +14,7 @@ app=Flask(__name__)
 ## PostgreSQL Connection Configuration
 connection=psycopg2.connect(
     host="localhost",
-    database="PYCRAY",
+    database=os.getenv("DATABASE_NAME"),
     user=os.getenv("DB_USERNAME"),
     password=os.getenv("DB_PASSWORD")
 )

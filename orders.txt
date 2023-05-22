@@ -1,0 +1,26 @@
+CREATE TABLE IF NOT EXISTS orders (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER,
+    product_name VARCHAR(255),
+    quantity INTEGER,
+    total_price DECIMAL(10, 2),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users (id)
+);
+
+INSERT INTO orders (user_id, product_name, quantity, total_price) VALUES (1, 'iPhone 12', 2, 1999.99);
+INSERT INTO orders (user_id, product_name, quantity, total_price) VALUES (1, 'MacBook Pro', 1, 2499.99);
+
+INSERT INTO orders (user_id, product_name, quantity, total_price) VALUES (2, 'Samsung Galaxy S21', 3, 1499.99);
+INSERT INTO orders (user_id, product_name, quantity, total_price) VALUES (2, 'iPad Pro', 2, 1299.99);
+INSERT INTO orders (user_id, product_name, quantity, total_price) VALUES (2, 'AirPods Pro', 1, 249.99);
+
+INSERT INTO orders (user_id, product_name, quantity, total_price) VALUES (3, 'Sony PlayStation 5', 1, 499.99);
+INSERT INTO orders (user_id, product_name, quantity, total_price) VALUES (3, 'Nintendo Switch', 2, 399.99);
+INSERT INTO orders (user_id, product_name, quantity, total_price) VALUES (3, 'Xbox Series X', 1, 499.99);
+
+INSERT INTO orders (user_id, product_name, quantity, total_price) VALUES (4, 'Apple Watch Series 6', 1, 399.99);
+
+INSERT INTO orders (user_id, product_name, quantity, total_price) VALUES (5, 'Google Pixel 6', 1, 799.99);
+INSERT INTO orders (user_id, product_name, quantity, total_price) VALUES (5, 'Amazon Echo Dot', 2, 59.99);
+INSERT INTO orders (user_id, product_name, quantity, total_price) VALUES (5, 'Nintendo Switch', 1, 399.99);
