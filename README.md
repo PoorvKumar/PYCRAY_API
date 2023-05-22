@@ -4,13 +4,16 @@ This repository contains a Flask RESTful API that exposes endpoints to retrieve 
 
 ## Requirements
 
-- Python 3.x
+- Python 3.11
 - Flask
 - psycopg2
 - dotenv
 
 ## Database Used
 - PostgreSQL
+
+## Note
+- Make sure that Python 3.11  and PostgreSQL are installed in your system.
 
 ## Installation
 
