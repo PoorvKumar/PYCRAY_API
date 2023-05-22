@@ -10,7 +10,7 @@ This repository contains a Flask RESTful API that exposes endpoints to retrieve 
 - dotenv
 
 ## Database Used
--PostgreSQL
+- PostgreSQL
 
 ## Installation
 
