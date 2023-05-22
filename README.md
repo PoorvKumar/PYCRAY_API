@@ -35,9 +35,9 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 5. Set up the database:
- - Create a PostgreSQL database on your local machine **(or to use online ElephantSQL uncomment line 11-12 in app.py)**
- - Modify the `connection` configuration in `app.py` with your database details(database name,usernmae,password). Alternatively, you can use environment variables by configuring up the `.env` file in the project directory and providing the necessary database credentials or use existing credentials. 
- - Use the Queries in User.txt and Orders.txt to create table and insert sample data in your tables in the same database.
+ - Create a PostgreSQL database on your local machine or use the default postgres database **(or to use online ElephantSQL uncomment line 11-12 in app.py and comment below connection)**
+ - Modify the .env file according to your database,by default `DATABASE_NAME=postgres DB_USERNAME=postgres DB_PASSWORD=root` 
+ - Open psql(PostgreSQL) and copy paste the queries in users.txt and orders.txt to create table and insert sample data in your tables in the same database.
 6. Run the Application:
 ```python
 flask run
