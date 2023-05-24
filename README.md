@@ -46,7 +46,7 @@ flask run
 The Flask API will be running at `http://localhost:5000/`.
 
 ## Note :
-- You can run the API even without using virtual environment but make sure all the packages in requiremnets.txt are installed globally using pip
+- You can run the API even without using virtual environment but make sure all the packages in requirements.txt are installed globally using pip
 - Example: `pip install psycopg2`
 
 ## Endpoints
